@@ -63,9 +63,13 @@
   <ItemGroup>
     <Compile Include="Assets\Event System\Core\Scripts\GameEvent.cs" />
     <Compile Include="Assets\Event System\Core\Scripts\GameEventTrigger.cs" />
-    <Compile Include="Assets\Event System\Demo\Scripts\Player\AnimatorController.cs" />
-    <Compile Include="Assets\Event System\Demo\Scripts\Player\InputController.cs" />
-    <Compile Include="Assets\Event System\Demo\Scripts\Player\PlayerController.cs" />
+    <Compile Include="Assets\Event System\Demo\Scripts\Gameplay\AnimatorController.cs" />
+    <Compile Include="Assets\Event System\Demo\Scripts\Gameplay\Bullet.cs" />
+    <Compile Include="Assets\Event System\Demo\Scripts\Gameplay\InputController.cs" />
+    <Compile Include="Assets\Event System\Demo\Scripts\Gameplay\MuzzlePositionAdjuster.cs" />
+    <Compile Include="Assets\Event System\Demo\Scripts\Gameplay\PlayerController.cs" />
+    <Compile Include="Assets\Event System\Demo\Scripts\Gameplay\Pool.cs" />
+    <Compile Include="Assets\Event System\Demo\Scripts\Gameplay\WeaponController.cs" />
     <Compile Include="Assets\Event System\Demo\Scripts\Util\BoundToScreen.cs" />
     <Compile Include="Assets\Event System\Demo\Scripts\Util\CameraConstraint.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">

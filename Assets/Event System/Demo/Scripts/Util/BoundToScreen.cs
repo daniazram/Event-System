@@ -2,6 +2,8 @@
 
 public class BoundToScreen : MonoBehaviour
 {
+    [SerializeField]
+    private Vector2 bounds = new Vector2(0, 1);
     private Camera cam;
     private Camera Cam
     {
@@ -27,8 +29,8 @@ public class BoundToScreen : MonoBehaviour
     public bool IsOutOfBounds(bool goingLeft)
     {
         if (goingLeft)
-            return ViewportPosition.x < 0;
+            return ViewportPosition.x < bounds.x;
         else
-            return ViewportPosition.x > 1;
+            return ViewportPosition.x > bounds.y;
     }
 }
