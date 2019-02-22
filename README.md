@@ -42,7 +42,7 @@ public void OnScoreUpdate(object[] data)
 { int score = (int)data[0]; }
 ```
 ###### Make sure you have added the listener as dynamic, a section on the top showing the functions that matches the argument list of the event, when selecting the function to add as a listener.
-
+![example-dynamic](https://user-images.githubusercontent.com/12896256/53271990-dc35dd00-3711-11e9-8f96-bddd461aba35.png)
 
 ## Project Hierarchy
 Project has one root folder named as **Event System** and two subfolders **Core**(the actual system, which is only two scripts), **Demo** a tiny demo to see the system in work.
