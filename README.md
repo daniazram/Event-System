@@ -1,1 +1,1 @@
-# Event-System
+# Event System with Scriptable Objects
