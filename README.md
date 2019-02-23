@@ -21,12 +21,12 @@ Every event is a **GameEvent** and to invoke the event you need to have a refere
 
 Lets say we want to shoot bullets, whenever user presses left mouse button we want to play the shooting animation, spawn particle effect, and spawn bullet. A typical setup with this event system will look like following:
 
-1. Create a new event by right clicking in the assets folder and selecting **Game Event** from the create menu, name it **Shoot**.
+1. Create a new event by right clicking in the assets folder and selecting **Game Event** from the create menu, name it **Shoot**. ![example-create](https://user-images.githubusercontent.com/12896256/53290872-3c895500-37cc-11e9-95f6-a15636027566.png)
 2. If haven't already, create an emtpy GameObject, name it something like **Game Event Manager**, and add the script   **GameEventTrigger.cs** to it.
-3. Select the **Game Event Manager**, from the inspector click on the **Add New Event** button and select the **Shoot** event.
+3. Select the **Game Event Manager**, from the inspector click on the **Add New Event** button and select the **Shoot** event. ![example-add-01](https://user-images.githubusercontent.com/12896256/53290884-6f334d80-37cc-11e9-877f-02053e73008f.png)
 4. You will see the default Unity Event interface, you can remove the event by clicking the little **minus sign** on the top right or you can add/remove listeners to/from the event by pressing the **+/-** on the bottom right of that event.
-5. Press the **+** button and add as many new listeners as you want e.g. add the `WeaponController.OnShoot()`, `AnimationController.PlayShootAnimation()`, and `EffectsController.StartMuzzleFlashEffect()`.
-6. Now in the class where you have the reference of **Shoot** event, whenever user presses LMB you can say `Shoot.Invoke()` and all the listeners will get notified.
+5. Press the **+** button and add as many new listeners as you want e.g. add the `WeaponController.OnShoot()`, `AnimationController.PlayShootAnimation()`, and `EffectsController.StartMuzzleFlashEffect()`. ![example-add-02](https://user-images.githubusercontent.com/12896256/53290888-7fe3c380-37cc-11e9-930d-bc94bb05e328.png)
+6. Now in the class where you have the reference of **Shoot** event, whenever user presses LMB you can say `Shoot.Invoke()` and all the listeners will get notified. ![example-invoke](https://user-images.githubusercontent.com/12896256/53290894-90943980-37cc-11e9-8ae2-2a59d3252bb3.PNG)
 
 This is the simplest use case of this system, you can send data of any type through these events and unlike the UnityEvent the **GameEvent** supports more than 4 arguments. Argument can only be `object[]` which you can cast to appropriate data type when recieved.
 ##### For Example
